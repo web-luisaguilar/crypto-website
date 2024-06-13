@@ -1,0 +1,389 @@
+/* Estilos Globales */
+
+@font-face {
+  font-family: 'monserrat';
+  src: url(../assets/fonts/Montserrat-Regular.otf);
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'alfaSlap';
+  src: url(../assets/fonts/AlfaSlabOne-Regular.ttf);
+  font-style: normal;
+}
+
+body {
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  background: #000;
+  color: WHITE;
+  background-image: url(../assets/img/bg-monedas.jpg), url(../assets/img/bg-cartas.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.master {
+  width: 100%;
+  margin: auto;
+  display: grid;
+  grid-template-rows: 90px 1fr 350px 1000px 1000px 400px 400px 250px 15px;
+  padding-top: 50px;
+  background-image: url(../assets/img/bg-card.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 50%;
+  gap: 2px;
+  font-family: Arial, Arial, Helvetica, sans-serif;
+}
+
+header {
+  display: grid;
+  grid-column: 1fr;
+  grid-template-columns: repeat(7, 1fr);
+  margin: 0 40px 0 40px;
+  font-family: 'arial';
+  font-weight: 900;
+}
+
+header a {
+  text-decoration: none;
+}
+
+header div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo {
+  grid-column: 1/3;
+  border: 1px solid #6b6b6b;
+}
+
+.logo-img {
+  width: 100%;
+  height: auto;
+}
+.hero-container {
+  border: 1px solid #6b6b6b;
+  width: 100%;
+  height: 70dvh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.hero-text {
+  text-align: center;
+}
+
+nav {
+  grid-column: 3/8;
+  background-image: url(../assets/img/texture-oro.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: black;
+}
+
+.nav-ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-evenly;
+  list-style: none;
+  align-items: center;
+  height: 100%;
+}
+
+.nav-a {
+  color: black;
+}
+
+.nav-a:hover {
+  cursor: pointer;
+  color: #c32e2e;
+}
+
+.welcome {
+  margin: 0 40px 0 40px;
+  color: white;
+  height: 900px;
+}
+
+.suscribete-boton {
+  border: none;
+  padding: 5px 15px;
+}
+
+.suscribete-boton:hover {
+  opacity: 70%;
+  cursor: pointer;
+}
+
+.baner1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #c40313;
+  font-size: 1.5rem;
+  letter-spacing: 2px;
+}
+
+.baner1 img {
+  width: 50px;
+}
+
+.banner1-textos {
+  text-align: center;
+}
+
+.baner1-h2 {
+  font-family: 'alfaSlap';
+  font-weight: normal;
+  color: white;
+}
+
+.baner1-h3 {
+  font-family: Arial, Helvetica, sans-serif;
+  color: black;
+  font-weight: 900;
+}
+
+.cards {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 150px 125px 10px 125px;
+}
+
+.card-item {
+  background-color: #202020;
+  width: 30%;
+  height: 95%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  padding: 25px;
+}
+.card-item > date {
+  font-size: 3rem;
+  margin-bottom: 2rem;
+}
+.card-item > img {
+  width: 100%;
+  height: 100%;
+  border: thin solid #6b6b6b;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.videoPresentacion {
+  padding: 200px 0px 200px 200px;
+  display: flex;
+  justify-content: flex-end;
+}
+.video-reference {
+  position: absolute;
+  width: 80%;
+  text-align: center;
+  font-size: 3rem;
+}
+
+.descripcion {
+  width: 30%;
+  padding: 0 100px;
+  display: flex;
+  align-items: center;
+}
+
+.descripcion-textos h3 {
+  font-size: 1.5rem;
+  letter-spacing: 2px;
+  font-family: 'alfaSlap';
+  font-weight: normal;
+}
+
+.descripcion-textos h2 {
+  font-size: 3.5rem;
+  letter-spacing: 5px;
+  font-family: 'alfaSlap';
+  font-weight: normal;
+  color: #c40313;
+}
+
+.descripcion-textos p {
+  font-family: 'monserrat', arial;
+  font-size: 1.1rem;
+  font-weight: bold;
+  line-height: 35px;
+}
+
+.cajaVideo {
+  width: 55%;
+  display: flex;
+  padding: 5% 0 5% 5%;
+  background-color: #c40313;
+  align-items: center;
+  justify-content: flex-end;
+  position: relative;
+}
+
+.cajaVideo video {
+  width: 854px;
+  height: 480px;
+  background-color: green;
+}
+
+.socialMedia {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.socialMedia-texto {
+  color: #c40313;
+  letter-spacing: 11px;
+  font-size: 2.2rem;
+}
+
+.socialMedia-logos {
+  display: inline-flex;
+  justify-content: center;
+}
+
+.socialMedia-logos-a {
+  padding: 10px 15px;
+}
+
+.socialMedia-logos-img {
+  width: 75px;
+}
+
+.partners {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.partners-texto {
+  width: 80%;
+  text-align: center;
+  padding: 2px;
+  background: rgb(135, 135, 135);
+  background: linear-gradient(
+    48deg,
+    rgba(135, 135, 135, 1) 3%,
+    rgb(126, 126, 126) 12%,
+    rgb(255, 255, 255) 48%,
+    rgb(136, 135, 135) 80%,
+    rgb(184, 183, 183) 100%
+  );
+}
+
+.partners-texto-span {
+  color: black;
+  font-size: 2.5rem;
+}
+
+.partners-logos {
+  width: 100%;
+  height: 75px;
+  text-align: center;
+  background-color: rgb(32, 32, 32, 0.5);
+  padding: 35px 0;
+  display: flex;
+  justify-content: center;
+  gap: 4px;
+}
+
+.partners-logos-a {
+  width: 400px;
+  height: 100%;
+  border: thin solid #6b6b6b;
+}
+
+.partners-logos-img {
+  height: 100%;
+}
+
+footer {
+  background: balck;
+  bottom: 0;
+  display: flex;
+  padding: 40px 0 15px 0;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.favPages {
+  width: 25%;
+}
+
+.favPages-ul {
+  list-style: none;
+}
+
+.favPages-li {
+  padding: 5px 5px;
+  font-weight: bold;
+}
+
+.socialFooter {
+  width: 20%;
+}
+
+.socialFooter-texto {
+  font-family: 'alfaSlap';
+  font-weight: normal;
+  background-color: #c40313;
+  padding-right: 15%;
+}
+
+.socialFooter-logos {
+  display: flex;
+}
+
+.socialFooter-logos-img {
+  width: 50px;
+  padding: 0 20px 0 0;
+}
+
+.contactosFooter {
+  font-weight: normal;
+  width: 25%;
+  text-align: center;
+}
+
+.contactosFooter h3 {
+  font-family: 'alfaSlap';
+}
+
+.contactosFooter h4 {
+  color: grey;
+}
+
+.copyright {
+  display: flex;
+  justify-content: center;
+  font-size: 0.75rem;
+  opacity: 40%;
+}
+
+.copyright a {
+  color: white;
+  padding: 0 5px;
+}
+
+/* MEDIA */
+
+@media screen and (max-width: 768px) {
+  body {
+    background: yellow;
+  }
+  nav {
+    display: none;
+  }
+}
