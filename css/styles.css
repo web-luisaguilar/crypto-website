@@ -11,36 +11,48 @@
   src: url(../assets/fonts/AlfaSlabOne-Regular.ttf);
   font-style: normal;
 }
+* {
+  margin: 0;
+  padding: 0;
+}
+*,
+*:after,
+*::before {
+  box-sizing: border-box;
+}
 
 body {
-  min-height: 100vh;
+  max-width: 100dvw;
+  min-height: 100dvh;
   margin: 0;
   padding: 0;
   background: #000;
   color: WHITE;
-  background-image: url(../assets/img/bg-monedas.jpg), url(../assets/img/bg-cartas.jpg);
+  background-image: url(../assets/img/bg-monedas.jpg),
+    url(../assets/img/bg-cartas.jpg);
   background-repeat: no-repeat;
+  background-position-x: center;
   background-size: contain;
-}
-
-.master {
-  width: 100%;
-  margin: auto;
   display: grid;
-  grid-template-rows: 90px 1fr 350px 1000px 1000px 400px 400px 250px 15px;
+  grid-template-rows: 90px 1fr 265px;
   padding-top: 50px;
-  background-image: url(../assets/img/bg-card.jpg);
-  background-repeat: no-repeat;
-  background-size: 100% 50%;
   gap: 2px;
-  font-family: Arial, Arial, Helvetica, sans-serif;
+  grid-template-columns: 1fr;
+  justify-items: center;
+}
+main {
+  display: grid;
+  grid-template-rows: 800px 500px 900px 600px 500px 300px;
+  width: 100%;
 }
 
 header {
   display: grid;
+  width: 100%;
+
   grid-column: 1fr;
   grid-template-columns: repeat(7, 1fr);
-  margin: 0 40px 0 40px;
+  padding: 0 40px 0 40px;
   font-family: 'arial';
   font-weight: 900;
 }
@@ -53,6 +65,13 @@ header div {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+section {
+  width: 100%;
+}
+main {
+  max-width: 1800px;
+  min-width: 1000px;
 }
 
 .logo {
@@ -104,7 +123,7 @@ nav {
 }
 
 .welcome {
-  margin: 0 40px 0 40px;
+  padding: 0 40px 0 40px;
   color: white;
   height: 900px;
 }
@@ -179,7 +198,7 @@ nav {
 }
 
 .videoPresentacion {
-  padding: 200px 0px 200px 200px;
+  padding: 0 40px 0 40px;
   display: flex;
   justify-content: flex-end;
 }
@@ -191,7 +210,6 @@ nav {
 }
 
 .descripcion {
-  width: 30%;
   padding: 0 100px;
   display: flex;
   align-items: center;
@@ -220,7 +238,6 @@ nav {
 }
 
 .cajaVideo {
-  width: 55%;
   display: flex;
   padding: 5% 0 5% 5%;
   background-color: #c40313;
